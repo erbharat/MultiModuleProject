@@ -186,7 +186,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
 			</plugin>
-							<plugin>
+					<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
 					<version>3.0.1</version>
@@ -201,6 +201,7 @@
 					</configuration>
 					<executions>
 						<execution>
+							<phase>site</phase>
 							<goals>
 								<goal>findbugs</goal>
 							</goals>
@@ -215,11 +216,13 @@
 					<executions>
 						<execution>
 							<goals>
+							<phase>site</phase>
 								<goal>prepare-agent</goal>
 							</goals>
 						</execution>
 						<execution>
 							<id>report</id>
+							<phase>site</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
@@ -245,6 +248,7 @@
 					</configuration>
 					<executions>
 						<execution>
+							<phase>site</phase>
 							<goals>
 								<goal>pmd</goal>
 							</goals>
@@ -257,6 +261,7 @@
 					<version>1.2.11</version>
 					<executions>
 						<execution>
+						<phase>site</phase>
 							<goals>
 								<goal>check</goal>
 							</goals>

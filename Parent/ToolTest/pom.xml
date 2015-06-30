@@ -46,7 +46,7 @@
 					</configuration>
 					<executions>
 						<execution>
-							
+							<phase>site</phase>
 							<goals>
 								<goal>findbugs</goal>
 							</goals>
@@ -60,12 +60,14 @@
 
 					<executions>
 						<execution>
+							<phase>site</phase>
 							<goals>
 								<goal>prepare-agent</goal>
 							</goals>
 						</execution>
 						<execution>
 							<id>report</id>
+							<phase>site</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
@@ -91,6 +93,7 @@
 					</configuration>
 					<executions>
 						<execution>
+							<phase>site</phase>
 							<goals>
 								<goal>pmd</goal>
 							</goals>
@@ -102,6 +105,7 @@
 					<artifactId>dependency-check-maven</artifactId>
 					<version>1.2.11</version>
 					<executions>
+					<phase>site</phase>
 						<execution>
 							<goals>
 								<goal>check</goal>
