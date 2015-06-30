@@ -105,8 +105,9 @@
 					<artifactId>dependency-check-maven</artifactId>
 					<version>1.2.11</version>
 					<executions>
-					<phase>site</phase>
+					
 						<execution>
+						<phase>site</phase>
 							<goals>
 								<goal>check</goal>
 							</goals>
