@@ -201,7 +201,6 @@
 					</configuration>
 					<executions>
 						<execution>
-							<phase>verify</phase>
 							<goals>
 								<goal>findbugs</goal>
 							</goals>
@@ -215,14 +214,12 @@
 
 					<executions>
 						<execution>
-							<phase>verify</phase>
 							<goals>
 								<goal>prepare-agent</goal>
 							</goals>
 						</execution>
 						<execution>
 							<id>report</id>
-							<phase>prepare-package</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
@@ -248,7 +245,6 @@
 					</configuration>
 					<executions>
 						<execution>
-							<phase>verify</phase>
 							<goals>
 								<goal>pmd</goal>
 							</goals>
@@ -261,7 +257,6 @@
 					<version>1.2.11</version>
 					<executions>
 						<execution>
-							<phase>verify</phase>
 							<goals>
 								<goal>check</goal>
 							</goals>
