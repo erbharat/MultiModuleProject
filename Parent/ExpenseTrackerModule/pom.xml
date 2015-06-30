@@ -215,8 +215,8 @@
 
 					<executions>
 						<execution>
-							<goals>
 							<phase>site</phase>
+							<goals>
 								<goal>prepare-agent</goal>
 							</goals>
 						</execution>
